@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cookie Clicker</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lilita+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="main_container">
+            <div id="logo">
+                <img src="./img/logo.svg">
+            </div>
+            <div id="cookie">
+                <button id="cookie_btn" disabled></button>
+            </div>
+            <p id="clicks">CLICKS: 0</p>
+            <p id="timer">01:00</p>
+            <div id="buttons_container">
+                <button class="buttons" id="btn_continue">CONTINUE</button>
+                <button class="buttons" id="btn_start">START</button>
+                <button class="buttons" id="btn_pause">PAUSE</button>
+                <button class="buttons" id="btn_restart">RESTART</button>
+            </div>
+        </div>
+        <div id="finish_overlay">
+            <div id="finish_card">
+                <p id="total">TOTAL</p>
+                <div id="clicks_container">
+                    <div class="card_text">
+                        <p class="click_text">CLICKS:</p>
+                        <p id="clicks_counter">0</p>
+                    </div>
+                    <div class="card_text">
+                        <p class="click_text">MAX CLICKS PER SECOND:</p>
+                        <p id="cps_counter">0</p>
+                    </div>
+                </div>
+                <div id="finish">
+                    <button class="buttons" id="btn_finish">FINISH</button>
+                </div>
+            </div>
+        </div>
+        <div id="small_cookie_container"></div>
+        <audio id="audio" src="./sounds/sound.mp3"></audio>
+        <script src="script.js"></script>
+    </body>
+</html>
